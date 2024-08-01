@@ -15,7 +15,7 @@ import StockContext from '../context/StockContext.js';
 
 const Chart = () => {
     const [data, setData] = useState(mockHistoricalData)
-    const [filter, setFilter] = useState("1Y");
+    const [filter, setFilter] = useState("1D");
     const { darkMode } = useContext(ThemeContext)
     const { stockSymbol } = useContext(StockContext);
 

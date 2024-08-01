@@ -1,9 +1,10 @@
-import { restClient } from '@polygon.io/client-js';
-const rest = restClient(process.env.POLY_API_KEY);
 
 
 
-const basepath = "http://finnhub.io/api/v1";
+
+
+
+const basepath = "https://cors-anywhere.herokuapp.com/http://finnhub.io/api/v1"; //https://cors-anywhere.herokuapp.com/
 const basepathPoly = "https://api.polygon.io/v2";
 
 export const searchSymbols = async (query) => {
